@@ -38,18 +38,23 @@ GitHub issues often contain long technical discussions. Summarizing them helps d
 While OpenAI’s GPT-3.5 API is powerful, it has usage limits and requires billing. To avoid quota errors and improve portability, we use a local summarization model from Hugging Face (facebook/bart-large-cnn) which is:
 
 ->Free to use
+
 ->Runs offline after the initial download
+
 ->Widely accepted for summarization tasks
 
 **Why facebook/bart-large-cnn?**
 
 ->Pre-trained on CNN/DailyMail summarization corpus
+
 ->Balanced trade-off between quality and speed
+
 ->Well-suited for issue-style text (semi-formal, technical)
 
 **Why Markdown Output?**
 
 ->Easy to share, render in GitHub, or paste into documentation
+
 ->Supports integration into automated workflows
 
 **🧰 Tech Stack**
@@ -65,17 +70,25 @@ While OpenAI’s GPT-3.5 API is powerful, it has usage limits and requires billi
 **🧪 Example Output (Terminal)**
 
 📌 Issue 1: Unexpected behavior in openai.ChatCompletion.create()
+
 🔗 https://github.com/openai/openai-python/issues/123
+
 📝 Summary: Passing a custom user ID completes successfully but doesn’t appear in logs or metrics as documented.
 
 **💡 What I’d Improve with More Time**
 
 ->Web-based UI (e.g., Flask or Streamlit interface)
+
 ->Interactive CLI (prompt for repo, filters, or labels)
+
 ->Batch mode to auto-run daily summaries on selected repos
+
 ->Keyword/tag extraction for automated triage
+
 ->Post summary as GitHub comment via GitHub API
+
 ->Multiple model options (t5-base, pegasus, mistral)
+
 ->Model caching and progress bars for better UX
 
 **✅ Status**
