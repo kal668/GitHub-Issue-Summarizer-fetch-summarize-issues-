@@ -1,11 +1,15 @@
 🤖 GitHub Issue Summarizer AI Agent
+
 This AI-powered agent fetches open issues from any public GitHub repository and summarizes each issue using a locally-run NLP model (facebook/bart-large-cnn) from Hugging Face. It provides concise summaries directly in your terminal and saves them as a Markdown report. Video Demo: https://youtu.be/7B2lQXm6a6g?si=WFt5YmS_yyZL2vr7
 
 **🚀 Quick Start**
+
 **1. Install Dependencies**
+
 pip install -r requirements.txt
 
 **2. (Optional) Create .env for GitHub Token**
+
 GITHUB_TOKEN=your_github_token_here
 If you don’t include a GitHub token, unauthenticated API calls are limited to 60/hour.
 
